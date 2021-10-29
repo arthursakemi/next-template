@@ -3,6 +3,8 @@ import { useContext } from 'react';
 
 import { TemplateContext } from '../context/ContextTemplate';
 
+import Header from '../components/Header';
+
 const Home: React.FC = () => {
   const { demoState } = useContext(TemplateContext);
 
@@ -12,6 +14,7 @@ const Home: React.FC = () => {
         <title>Next Template</title>
       </Head>
       <main>
+        <Header />
         <h3>Context</h3>
         <h4>{demoState}</h4>
       </main>
