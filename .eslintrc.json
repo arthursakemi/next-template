@@ -31,6 +31,9 @@
     "space-before-function-paren": "off",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
+    "react/no-array-index-key": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "import/prefer-default-export": "off",
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
     "react/jsx-props-no-spreading": [
       "error",
