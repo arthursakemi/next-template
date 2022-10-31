@@ -38,6 +38,7 @@ module.exports = {
     'react/no-array-index-key': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
     'import/prefer-default-export': 'off',
+    "import/extensions": ["error", "never"],
     'react/jsx-filename-extension': ['warn', { extensions: ['.tsx'] }],
     'react/jsx-props-no-spreading': ['error', { exceptions: ['Component', 'App'] }],
     'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
