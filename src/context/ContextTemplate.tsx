@@ -1,4 +1,4 @@
-import { createContext, useState, Dispatch, SetStateAction, ReactNode, useMemo, FC } from 'react';
+import { Dispatch, FC, ReactNode, SetStateAction, createContext, useMemo, useState } from 'react';
 
 export type TemplateState = {
   demoState: string;
@@ -14,10 +14,7 @@ export const TemplateContext = createContext({} as TemplateState);
 export const TemplateProvider: FC<TemplateProviderPropsType> = ({ children }) => {
   const [demoState, setDemoState] = useState('demo state');
 
-  const providerValue: TemplateState = useMemo(
-    () => ({ demoState, setDemoState }),
-    [demoState, setDemoState]
-  );
+  const providerValue: TemplateState = useMemo(() => ({ demoState, setDemoState }), [demoState, setDemoState]);
 
   return <TemplateContext.Provider value={providerValue}>{children}</TemplateContext.Provider>;
 };
