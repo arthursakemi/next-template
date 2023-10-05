@@ -1,4 +1,4 @@
-import { ComponentWithChildren } from '../../types';
+import { ComponentWithChildren } from '@/common/types';
 
 export const contextComposer = (...providers: ComponentWithChildren[]) => {
   const ComposedComponents: ComponentWithChildren = ({ children }) => (

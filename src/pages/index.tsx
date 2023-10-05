@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useContext } from 'react';
-import Header from '../components/Header';
-import { TemplateContext } from '../context/ContextTemplate';
+import Header from '@/components/Header';
+import { TemplateContext } from '@/context/ContextTemplate';
 
 const Home: React.FC = () => {
   const { demoState } = useContext(TemplateContext);
